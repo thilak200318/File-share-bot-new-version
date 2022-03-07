@@ -13,9 +13,9 @@ from database.sql import add_user, query_msg, full_userbase
 
 #=====================================================================================##
 
-WAIT_MSG = """"<b>Processing ...</b>"""
+WAIT_MSG = """"<b>⏳</b>"""
 
-REPLY_ERROR = """<code>Use this command as a replay to any telegram message with out any spaces.</code>"""
+REPLY_ERROR = """<b>ᑌՏᗴ TᕼIՏ ᑕOᗰᗰᗩᑎᗪ ᗩՏ ᗩ ᖇᗴᑭᒪᗩY TO ᗩᑎY Tᗴᒪᗴᘜᖇᗩᗰ ᗰᗴՏՏᗩᘜᗴ ᗯITᕼ OᑌT ᗩᑎY ՏᑭᗩᑕᗴՏ 😬</b>"""
 
 #=====================================================================================##
 
@@ -57,11 +57,11 @@ async def start_command(client: Client, message: Message):
                 ids = [int(int(argument[1]) / abs(client.db_channel.id))]
             except:
                 return
-        temp_msg = await message.reply("𝙰𝙲𝙲𝙴𝚂𝚂𝙸𝙽𝙶 𝙵𝙸𝙻𝙴𝚂...!")
+        temp_msg = await message.reply("ᗩᑕᑕᗴՏՏIᑎᘜ ᖴIᒪᗴՏ...!")
         try:
             messages = await get_messages(client, ids)
         except:
-            await message.reply_text("𝚂𝚘𝚖𝚎𝚝𝚑𝚒𝚗𝚐 𝚠𝚎𝚗𝚝 𝚠𝚛𝚘𝚗𝚐..!")
+            await message.reply_text("Oᕼ.. 🙄 ՏOᗰᗴTᕼIᑎᘜ ᗯᗴᑎT ᗯᖇOᑎᘜ.. 😐!")
             return
         await temp_msg.delete()
 
@@ -90,11 +90,11 @@ async def start_command(client: Client, message: Message):
         reply_markup = InlineKeyboardMarkup(
             [
                     [
-                        InlineKeyboardButton("𝚂𝚄𝙱𝚂𝙲𝚁𝙸𝙱𝙴", url="https://youtube.com/channel/UCf_dVNrilcT0V2R--HbYpMA")                        
-                    ],
+                        InlineKeyboardButton("🥶 𝙃𝙚𝙡𝙥 🥶", url="https://t.me/asifpmn"),                       
+                        InlineKeyboardButton("🧐 𝘼𝙗𝙤𝙪𝙩 🧐", callback_data = "about")
+                    ], 
                     [
-                        InlineKeyboardButton("𝙰𝙱𝙾𝚄𝚃", callback_data = "about"),
-                        InlineKeyboardButton("𝙲𝙻𝙾𝚂𝙴", callback_data = "close")
+                        InlineKeyboardButton("🤞 𝘾𝙡𝙤𝙨𝙚 🤞", callback_data = "close")
                     ]
                 ]
             )        
@@ -117,7 +117,7 @@ async def not_joined(client: Client, message: Message):
     buttons = [
         [
             InlineKeyboardButton(
-                "𝙹𝙾𝙸𝙽 𝙲𝙷𝙰𝙽𝙽𝙴𝙻",
+                "🍬 𝙃𝙮 𝙟𝙤𝙞𝙣 𝙘𝙝𝙖𝙣𝙣𝙚𝙡 🍬",
                 url = client.invitelink)
         ]
     ]
@@ -125,7 +125,7 @@ async def not_joined(client: Client, message: Message):
         buttons.append(
             [
                 InlineKeyboardButton(
-                    text = '𝚃𝚁𝚈 𝙰𝙶𝙰𝙸𝙽',
+                    text = '😫, 𝙊𝙝 𝙩𝙧𝙮 𝙖𝙜𝙖𝙞𝙣 😫',
                     url = f"https://t.me/{client.username}?start={message.command[1]}"
                 )
             ]
@@ -184,11 +184,11 @@ async def send_text(client: Bot, message: Message):
         
         status = f"""<b>𝙱𝚁𝙾𝙰𝙳𝙲𝙰𝚂𝚃 𝙲𝙾𝙼𝙿𝙻𝙴𝚃𝙴𝙳
 
-𝚃𝙾𝚃𝙰𝙻 𝚄𝚂𝙴𝚁𝚂: {total}
-𝚂𝚄𝙲𝙲𝙴𝚂𝚂𝙵𝚄𝙻: {successful}
-𝙱𝙻𝙾𝙲𝙺𝙴𝙳 𝚄𝚂𝙴𝚁𝚂: {blocked}
-𝙳𝙴𝙻𝙴𝚃𝙴𝙳 𝙰𝙲𝙲𝙾𝚄𝙽𝚃: {deleted}
-𝚄𝙽𝚂𝚄𝙲𝙲𝙴𝚂𝚂𝙵𝚄𝙻: {unsuccessful}</b>"""
+Tᴏᴛᴀʟ ᴜsᴇʀs 🤓: {total}
+Sᴜᴄᴄᴇssғᴜʟ 🤪: {successful}
+Bʟᴏᴄᴋᴇᴅ ᴜsᴇʀs 🤬: {blocked}
+Dᴇʟᴇᴛᴇᴅ ᴀᴄᴄᴏᴜɴᴛs 🥺: {deleted}
+Uɴsᴜᴄᴄᴇssғᴜʟ 😭: {unsuccessful}</b>"""
         
         return await pls_wait.edit(status)
 
