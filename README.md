@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logo.png" alt="Ajax-Extra-FeaturesLogo">
+  <img src="assets/stickertolmg.png" alt="Ajax-Extra-FeaturesLogo">
 </p>
 <h1 align="center">
   <b>𝙾𝙿-𝙵𝙸𝙻𝙴 𝚂𝚃𝙾𝚁𝙴 𝙱𝙾𝚃</b>
@@ -12,7 +12,7 @@
 <p align="center">
 
 
-<a href="https://t.me/Aadhi011"><img alt="Telegram" src="https://img.shields.io/badge/Aadhi-2CA5E0?style=for-the-badge&logo=telegram&logoColor=green"/></a>
+<a href="https://t.me/mlavib"><img alt="Telegram" src="https://img.shields.io/badge/Aadhi-2CA5E0?style=for-the-badge&logo=telegram&logoColor=green"/></a>
 </p>
 </div>
 Telegram Bot to store Posts and Documents and it can Access by Special Links.
