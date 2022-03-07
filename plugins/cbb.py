@@ -10,12 +10,12 @@ async def cb_handler(client: Bot, query: CallbackQuery):
     data = query.data
     if data == "about":
         await query.message.edit_text(
-            text = f"<b>╭━━━━━━━━━━━━━━━➣\n┣⪼ Creator : <a href='tg://user?id={OWNER_ID}'>Me</a>\n┣⪼ Language : Python3\n┣⪼ Library : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio {__version__}</a>\n┣⪼ Source Code : <a href='https://github.com/Aadhi000/OP-Files-Store-Bot'>OP-File Store Bot</a>\n┣⪼ Channel : <a href='https://t.me/OpusTechz'>Opus Techz</a>\n┣⪼ YouTube Channel : <a href='https://youtube.com/channel/UCf_dVNrilcT0V2R--HbYpMA'>Opus Techz</a>\n╰━━━━━━━━━━━━━━━➣</b>",
+            text = f"<b>╭━━━━━━━━━━━━━━━➣\n┣⪼ Cʀᴇᴀᴛᴏʀ 👉 <a href='tg://user?id={OWNER_ID}'>Mᴇ</a>\n┣⪼ Lᴀɴɢᴜᴀɢᴇ 👉 Pʏᴛʜᴏɴ𝟹\n┣⪼ Lɪʙʀᴀʀʏ 👉 <a href='https://docs.pyrogram.org/'>Pʏʀᴏɢʀᴀᴍ ᴀsʏɴᴄɪᴏ {__version__}</a>\n┣⪼ Sᴏᴜʀᴄᴇ Cᴏᴅᴇ 👉 <a href='https://t.me/MVFILESHAREbot?start=Z2V0LTE1MTU0NDM5ODg0NTU4NzI='>MV - ғɪʟᴇ sʜᴀʀᴇ ʙᴏᴛ ✨</a>\n┣⪼ Cʜᴀɴɴᴇʟ 👉 <a href='https://t.me/MLAVIB'>MLᴀVIB</a>\n┣⪼ Bᴏᴛ ʀᴇʟᴇᴀsᴇ ᴅᴀᴛᴇ 👉 Fᴇʙʀᴜᴀʀʏ 2022\n╰━━━━━━━━━━━━━━━➣</b>",
             disable_web_page_preview = True,
             reply_markup = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("𝙲𝙻𝙾𝚂𝙴", callback_data = "close")
+                        InlineKeyboardButton("🤞 𝘾𝙡𝙤𝙨𝙚 🤞", callback_data = "close")
                     ]
                 ]
             )
