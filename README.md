@@ -1,6 +1,7 @@
 <p align="center">
   <img src="assets/stickertolmg.png" alt="MLaVIB-Logo">
 </p>
+![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=welcome+To+MLaVIB+Repo!;created+by+asif+pmn!;A+simple+tg+FILE+SENDING+bot+NEW VERSION!)</p>
 <h1 align="center">
   <b>𝙾𝙿-𝙵𝙸𝙻𝙴 𝚂𝚃𝙾𝚁𝙴 𝙱𝙾𝚃</b>
 </h1>
